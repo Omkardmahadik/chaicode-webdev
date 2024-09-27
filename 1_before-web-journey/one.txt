@@ -1,0 +1,5 @@
+i am new in web development
+
+ctrl+p = one screen to second screen
+ctrl+shift+p, = settings
+ctrl+shift+~ = open the terminal
