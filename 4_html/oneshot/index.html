@@ -1,0 +1,325 @@
+<!-- Declaration of the document type as HTML5 -->
+<!DOCTYPE html>
+
+<!-- HTML element, specifying the language as English -->
+<html lang="en">
+
+<!-- Head section, containing metadata about the document -->
+
+<head>
+    <!-- Character encoding set to UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page, displayed in the browser's title bar -->
+    <title>Document</title>
+
+    <!-- Link to an external stylesheet (Chpt1.css) -->
+    <link rel="stylesheet" href="Chpt1.css">
+</head>
+
+<!-- Body section, containing the main content of the page -->
+
+<body>
+
+    <p>Welcome to the website</p>
+
+    <!-- Image element, displaying an image (download.jfif) -->
+    <img src="download.jfif">
+
+    <!-- Chapter 2 understanding page structure -->
+    <!-- Script element, linking to an external JavaScript file (ch.js) -->
+    <script type="text/javascript" src="ch.js"></script>
+
+    <!-- Chapter 3 creating text elements -->
+
+    <!-- Heading elements (h1-h4), used for headings and subheadings -->
+    <h1>This is heading</h1>
+    <h2>This is heading</h2>
+    <h3>This is heading</h3>
+    <h4>This is heading</h4>
+
+    <!-- Paragraph element with styled text (bold, italic, and underlined) -->
+    <p><b>omkar</b> <i>niraj</i> <u>future</u></p>
+
+    <!-- Superscript element, used for formulas (E=mc^2) -->
+    E=mc<sup>2</sup>
+
+    <!-- Line break element, used for spacing -->
+    <br>
+
+    <!-- Subscript element, used for chemical formulas (H2O) -->
+    H<sub>2</sub>O
+
+    <!-- Blockquote element, used for quoting text -->
+    <blockquote>This is heading</blockquote>
+
+    <!-- Preformatted text element, used for displaying code or fixed-width text -->
+    <pre>Text in a pre element</pre>
+
+    <!-- Ordered list (ol) element, used for numbered lists -->
+    <ol>
+        <li>mumbai</li>
+        <li>ayodya</li>
+        <li>thirupathi balaji</li>
+    </ol>
+
+    <!-- Unordered list (ul) element, used for bulleted lists -->
+    <ul>
+        <li>mumbai</li>
+        <li>ayodya</li>
+        <li>thirupathi balaji</li>
+    </ul>
+
+    <!-- Nested lists, used for complex list structures -->
+    <ol>
+        <li>mumbai</li>
+        <li>ayodya</li>
+        <li>thirupathi balaji
+            <ul>
+                <li>mumbai</li>
+                <li>ayodya</li>
+                <li>thirupathi balaji</li>
+            </ul>
+        </li>
+        <li>bharat</li>
+    </ol>
+
+    <!-- Definition list (dl) element, used for defining terms and their meanings -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+
+    <!-- Anchor element (a), used for creating hyperlinks -->
+    <!-- Link to an external website (Google) -->
+    <a href="https://google.com">Google</a><br>
+
+    <!-- Link to an internal page (about.html) -->
+    <a href="about.html">About Us</a><br>
+
+    <!-- Link with a target attribute, opening in a new tab -->
+    <a href="http://www.example.com/about.html" target="_blank">About</a><br>
+
+    <!-- Link to a phone number -->
+    Call: <a href="tel:1234567890">(123) 456-7890</a><br>
+
+    <!-- Link to an email address -->
+    <a href="mailto:contact@example.com">contact@example.com</a>
+
+    <!-- Anchor link to a section on the same page -->
+    <a href="#services">View The Services</a>
+
+    <!-- Anchor link target, used for linking to a specific section on the same page -->
+    <a name="services">Services</a>
+
+    <!--forms -->
+    <form action="/action.php">
+        <label>enter your username:
+            <input type="text" placeholder="username">
+
+    </form>
+    </input>
+
+    <form action="index.html">
+        <label for="un">enter your password:
+            <input placeholder="password" id="un">
+
+    </form>
+    <br>
+    <!-- button -->
+    <button type="submit"> submit</button>
+
+    <!-- search word in google using form -->
+    <form action="https://www.google.co.in/">
+        <label for="se"> &#128509;</label>
+        <input type="text" placeholder="search" id="se" />
+    </form>
+
+    <!-- checkbox -->
+    <input type="checkbox" name="age" id="age" checked />
+    <label for="se"> &#128509; 18 or 18+</label>
+    <br>
+
+    <!-- volume button -->
+    <select name="profession" id="profession">
+        <option value="student">student</option>
+        <option value="dev">dev</option>
+    </select>
+
+    <!-- volume button -->
+    <label for="volume">volume</label>
+    <input type="range" min="0" max="100" name="vol" id="volume" />
+
+    <!-- text for your review -->
+    <textarea name="" id="">feedback </textarea>
+
+    <!-- Semantic Markup :- -->
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <nav></nav>
+    <article></article>
+    <section></section>
+
+    <!-- entities -->
+    &copy; omkar
+
+
+    <!-- form -->
+    <form>
+        <!-- This is a label element, which provides a text description for a form control -->
+        <label for="text-input">
+            Text Input:
+            <!-- This is an input element, which allows the user to enter text -->
+            <input type="text" name="text-input" id="text-input">
+            <!-- This input type is used for general text input, such as names, addresses, etc. -->
+        </label>
+    
+        <label for="password-input">
+            Password Input:
+            <!-- This is an input element, which allows the user to enter a password -->
+            <input type="password" name="password-input" id="password-input">
+            <!-- This input type is used for password input, and the characters are masked for security -->
+        </label>
+    
+        <label for="email-input">
+            Email Input:
+            <!-- This is an input element, which allows the user to enter an email address -->
+            <input type="email" name="email-input" id="email-input">
+            <!-- This input type is used for email input, and can validate the input to ensure it's a valid email address -->
+        </label>
+    
+        <label for="tel-input">
+            Tel Input:
+            <!-- This is an input element, which allows the user to enter a phone number -->
+            <input type="tel" name="tel-input" id="tel-input">
+            <!-- This input type is used for phone number input, and can validate the input to ensure it's a valid phone number -->
+        </label>
+    
+        <label for="number-input">
+            Number Input:
+            <!-- This is an input element, which allows the user to enter a number -->
+            <input type="number" name="number-input" id="number-input">
+            <!-- This input type is used for number input, and can validate the input to ensure it's a valid number -->
+        </label>
+    
+        <label for="date-input">
+            Date Input:
+            <!-- This is an input element, which allows the user to enter a date -->
+            <input type="date" name="date-input" id="date-input">
+            <!-- This input type is used for date input, and can validate the input to ensure it's a valid date -->
+        </label>
+    
+        <label for="time-input">
+            Time Input:
+            <!-- This is an input element, which allows the user to enter a time -->
+            <input type="time" name="time-input" id="time-input">
+            <!-- This input type is used for time input, and can validate the input to ensure it's a valid time -->
+        </label>
+    
+        <label for="datetime-local-input">
+            Datetime Local Input:
+            <!-- This is an input element, which allows the user to enter a date and time -->
+            <input type="datetime-local" name="datetime-local-input" id="datetime-local-input">
+            <!-- This input type is used for date and time input, and can validate the input to ensure it's a valid date and time -->
+        </label>
+    
+        <label for="month-input">
+            Month Input:
+            <!-- This is an input element, which allows the user to enter a month -->
+            <input type="month" name="month-input" id="month-input">
+            <!-- This input type is used for month input, and can validate the input to ensure it's a valid month -->
+        </label>
+    
+        <label for="week-input">
+            Week Input:
+            <!-- This is an input element, which allows the user to enter a week -->
+            <input type="week" name="week-input" id="week-input">
+            <!-- This input type is used for week input, and can validate the input to ensure it's a valid week -->
+        </label>
+    
+        <label for="checkbox-input">
+            Checkbox Input:
+            <!-- This is a checkbox element, which allows the user to select one or more options -->
+            <input type="checkbox" name="checkbox-input" id="checkbox-input">
+            <!-- This input type is used for checkbox input, and can be used for multiple options -->
+        </label>
+    
+        <label for="radio-input">
+            Radio Input:
+            <!-- This is a radio button element, which allows the user to select one option -->
+            <input type="radio" name="radio-input" id="radio-input">
+            <!-- This input type is used for radio button input, and can be used for single option selection -->
+        </label>
+    
+        <label for="file-input">
+            File Input:
+            <!-- This is a file input element, which allows the user to upload a file -->
+            <input type="file" name="file-input" id="file-input">
+            <!-- This input type is used for file input, and can be used for uploading files -->
+        </label>
+    
+        <label for="hidden-input">
+            Hidden Input:
+            <!-- This is a hidden input element, which is not visible to the user -->
+            <input type="hidden" name="hidden-input" id="hidden-input">
+            <!-- This input type is used for hidden input, and can be used for storing data that should not be visible to the user -->
+        </label>
+    
+        <label for="image-input">
+            Image Input:
+            <!-- This is an image input element, which allows the user to upload an image -->
+            <input type="image" name="image-input" id="image-input">
+            <!-- This input type is used for image input, and can be used for uploading images -->
+        </label>
+    
+        <label for="reset-input">
+            Reset Input:
+            <!-- This is a reset input element, which resets the form to its default state -->
+            <input type="reset" name="reset-input" id="reset-input">
+            <!-- This input type is used for reset input, and can be used for resetting the form -->
+        </label>
+    
+        <label for="submit-input">
+            Submit Input:
+            <!-- This is a submit input element, which submits the form to the server -->
+            <input type="submit" name="submit-input" id="submit-input">
+            <!-- This input type is used for submit input, and can be used for submitting the form -->
+        </label>
+    
+        <label for="search-input">
+            Search Input:
+            <!-- This is a search input element, which allows the user to enter a search query -->
+            <input type="search" name="search-input" id="search-input">
+            <!-- This input type is used for search input, and can be used for searching -->
+        </label>
+    
+        <label for="url-input">
+            URL Input:
+            <!-- This is a URL input element, which allows the user to enter a URL -->
+            <input type="url" name="url-input" id="url-input">
+            <!-- This input type is used for URL input, and can be used for entering URLs -->
+        </label>
+    
+        <label for="range-input">
+            Range Input:
+            <!-- This is a range input element, which allows the user to select a value from a range -->
+            <input type="range" name="range-input" id="range-input">
+            <!-- This input type is used for range input, and can be used for selecting values from a range -->
+        </label>
+    
+        <label for="color-input">
+            Color Input:
+            <!-- This is a color input element, which allows the user to select a color -->
+            <input type="color" name="color-input" id="color-input">
+            <!-- This input type is used for color input, and can be used for selecting colors -->
+        </label>
+    </form>
+</body>
+
+</html>
