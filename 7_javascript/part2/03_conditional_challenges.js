@@ -1,0 +1,58 @@
+//1: checking if a number is greater than another number: 
+let n1 = 10
+let n2 = 20
+
+// {}->block of code
+if (n1 > n2) {
+    console.log("n1 is greater than n2");
+
+}
+else if (n2 > n1) {
+    console.log("n2 is greater than n1");
+
+}
+
+//2: Checking if a string is equal to another string
+let string1 = "omkar"
+let string2 = "omkar"
+
+if (string1 == string2) {
+    console.log("pick another username");
+}
+else {
+    console.log("you can pick the username");
+}
+
+//3: checking if a variable is number or not
+let no = 10
+
+if (typeof no === 'number') {
+    console.log("variable is number");
+}
+else {
+    console.log("variable is not");
+}
+
+//4: checking if a boolean value is true or false
+
+Boolean=true
+
+if(Boolean){
+    console.log("boolean value is true")
+}
+else {
+    console.log("boolean value is false");
+    
+}
+
+// Checking if an array is empty or not:
+let myarr=["item1"]
+
+if(myarr.length===0)
+{
+    console.log("array is empty");
+    
+}
+else{
+    console.log("array is not empty");
+}
