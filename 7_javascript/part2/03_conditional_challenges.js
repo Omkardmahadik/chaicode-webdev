@@ -56,3 +56,29 @@ if(myarr.length===0)
 else{
     console.log("array is not empty");
 }
+
+//6: Write a JavaScript code to check if a number is even or odd using an if-else statement.
+let n=11
+
+if(n%2==0)
+{
+    console.log("number is even");
+}
+else if(n>=3)
+{
+    console.log("number is odd");  
+}
+
+/*7: Write a JavaScript code to check if a person is eligible to vote based on their age. If the age is 18 or above, they are eligible to vote, otherwise, they are not.*/
+
+let age=18
+
+if(age>=18)
+{
+    console.log("eligible to vote");    
+}
+else if(age<=18)
+{
+    console.log("not eligible to vote");
+    
+}
