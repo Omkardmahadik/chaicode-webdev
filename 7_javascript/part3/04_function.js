@@ -38,3 +38,10 @@ function orderTea(teaType){
     return confirmOrder()
 }
 confirmOrder()
+
+
+function order = ()=>{
+  console.log("hello world");
+}
+
+order();
