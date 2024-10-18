@@ -40,8 +40,29 @@ function orderTea(teaType){
 confirmOrder()
 
 
-function order = ()=>{
-  console.log("hello world");
-}
+/*3. Write an arrow function named 'calculateTotal' that
+takes two parameters: 'price' and 'quantity'. The
+function should return the total cost by multiplying the
+`price' and 'quantity'.
+Store the result in a variable named 'totalCost' .
+*/
+// const calculateTotal=(price,auantity)=>{
+//     return price*auantity;
+// }
 
-order();
+// 2nd way - implicit return no use of return
+const calculateTotal=(price,auantity)=> price*auantity;
+
+let totalCost=calculateTotal(3,5);
+console.log(`Total cost=${totalCost}`);
+
+
+
+/*
+4. Write a function named 'processTeaOrder' that takes
+another function, 'makeTea', as a parameter and calls it
+with the argument ""earl grey"'.*/
+function processTeaOrder(makeTea){
+   return `earl grey`
+}
+processTeaOrder()
