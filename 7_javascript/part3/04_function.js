@@ -55,37 +55,47 @@ const calculateTotal=(price,auantity)=> price*auantity;
 let totalCost=calculateTotal(3,5);
 console.log(`Total cost=${totalCost}`);
 
-// if u dont want to return use in function 
-// its a shortcut of function
-let adds = (n1,n2)=>(2+3)
-console.log(`add=${adds()}`);
+
 
 /*
 4. Write a function named 'processTeaOrder' that takes
 another function, 'makeTea', as a parameter and calls it
 with the argument ""earl grey"'.*/
 
-function makeTea(typeOfTea)
-{
-   return `maketea:${typeOfTea}`
+// function makeTea(typeOfTea)
+// {
+//    return `maketea:${typeOfTea}`
+// }
+
+// function processTeaOrder(teafunction)
+// {
+//   return teafunction('earl grey')
+// }
+
+// let Order=processTeaOrder(makeTea)
+// console.log(order);
+
+// learn higher order function
+
+//write a function named 'createteamaker' that returns another function. the returned function schould take one parameter, 'tea type', and return a message like "making green tea"`. store the returned function in a variable named `teamaker` and call it with "green tea"`.
+// function createteamaker(){
+//   return function tea(teaType){
+//     return `making green tea ${teaType}`
+// }
+// }
+
+// let teamaker=createteamaker()
+// console.log(teamaker(`lemon tea`));
+
+
+function createteamaker(name){
+  return function tea(teaType){
+    return `making green tea ${teaType} ${name}`
 }
-
-function processTeaOrder(teafunction)
-{
-  return teafunction('earl grey')
 }
-
-processTeaOrder(makeTea)
-
-
-function createteamaker(){
-
-}
-function tea(teaType){
-    return "making green tea"
-}
-let teamaker=tea()
-
+//  what is called
+let teamaker=createteamaker("omkar")
+console.log(teamaker(`lemon tea`));
 
 
 
