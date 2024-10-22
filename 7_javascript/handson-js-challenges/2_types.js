@@ -16,7 +16,7 @@ no=stringToNumber("om")
 
 function flipBoolean(input)
 {
-   bool = Boolean(input)
-   
+   return !Boolean(input) 
 }
-g=flipBoolean(true)
+n=flipBoolean(true);
+console.log(n);
