@@ -25,23 +25,45 @@ console.log(n);
 // Write a function whatAmI that takes an input and returns a string describing its type after conversion. If it's a number, return "I'm a number!", if it's a string, return "I'm a string!"
 
 function whatAmI(input) {
-   // Convert input to number
-   const num = Number(input);
- 
-   // Check if the input is a number and is not NaN
-   if (!isNaN(num) && typeof input !== 'string') {
-     return "I'm a number!";
-   }
-   // Check if the input is a string
-   else if (typeof input === 'string') {
-     return "I'm a string!";
-   } else {
-     return "I'm something else!";
-   }
+  if(!isNaN(Number) && Number.trim() !== '')
+  {
+    return"I'm a number!"
+  }  
+  else
+  {
+   return "I'm a string!"
+  }
+
+}
+i=whatAmI("om")
+// console.log(i);
+
+// Task 4:
+// Write a function isItTruthy that takes an input and returns "It's truthy!" if the value is truthy in JavaScript, or "It's falsey!" if it's falsey.
+
+function isItTruthy(input)
+{
+ if(input)
+ {
+    console.log(`truthy`);
  }
- 
- // Example usage:
- console.log(whatAmI(2));        // Output: I'm a number!
- console.log(whatAmI("hello"));  // Output: I'm a string!
- console.log(whatAmI(null));     // Output: I'm something else!
- console.log(whatAmI(undefined)); // Output: I'm something else!
+ else{
+   console.log(`falsey`);
+ }
+}
+let truth=isItTruthy("It's truthy!")
+
+/*
+function isItTruthy(input)
+{
+  return "It's truthy!"
+}
+
+if(input="It's truthy!")
+{
+ console.log(`truthy ${input}`);
+}
+else if(input="It's falsey!")
+{
+ console.log(`falsey ${input}`);
+}*/
