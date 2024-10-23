@@ -25,7 +25,7 @@ console.log(n);
 // Write a function whatAmI that takes an input and returns a string describing its type after conversion. If it's a number, return "I'm a number!", if it's a string, return "I'm a string!"
 
 function whatAmI(input) {
-  if(!isNaN(Number) && Number.trim() !== '')
+  if(!isNaN(input) && Number.toString().trim() !== '')
   {
     return"I'm a number!"
   }  
@@ -35,7 +35,6 @@ function whatAmI(input) {
   }
 
 }
-i=whatAmI("om")
 // console.log(i);
 
 // Task 4:
