@@ -1,0 +1,2 @@
+prototype meaning
+In JavaScript, prototype ek aisa mechanism hai jo objects aur functions ko properties aur methods share karne ki permission deta hai. Har function aur object ke paas ek default prototype object hota hai jo inherit kiya ja sakta hai, jisse code reuse hota hai aur memory efficiently use hoti hai.
