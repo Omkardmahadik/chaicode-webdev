@@ -41,3 +41,33 @@ let myarr=[1,2,3,4]
 console.log(myarr.omkar());
 let myarrs={1:"omkar",2:"sai"}
 console.log(myarrs.omkar);
+
+// Class and objects
+
+class vehicle{
+    // to use functions parameters we use cons
+    constructor(name,make){
+       this.name = name
+       this.make = make
+    }
+
+    // its called method in class we dony use function key word is a advantage
+    start()
+    {
+      return `${this.name} is a car from ${this.make}`
+    }
+}
+
+class Car extends vehicle{
+   drive()
+   {
+     return `${this.name} : indias best car`;
+   }
+}
+
+let mycar = new Car("Tata","suv500")
+
+console.log(mycar.start());
+
+console.log(mycar.drive());
+
