@@ -14,4 +14,11 @@ document.getElementById(`changeTextButton`).addEventListener(`click`, function (
 
 
 // example-2
+// example-2
+document.getElementById('highlightfirstcity').addEventListener(`click`, function () {
+    // how to access element
+    let citiesList = document.getElementById(`citiesList`);
+    citiesList.firstElementChild.classList.add(`highlight`);
 
+
+});
