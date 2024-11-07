@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- example 1: accessing dom element -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- example 1: accessing dom element -->
 
-<section id="example-1">
-    <h2>Accessing dom elements</h2>
-    <p id="myParagraph">
-        this is a paragraph. click the button to change me!
-    </p>
-    <button id="changeTextButton">change text</button>
-    <button id="reset">reset</button>
-</section>
+        <section id="example-1">
+            <h2>Accessing dom elements</h2>
+            <p id="myParagraph">
+                this is a paragraph. click the button to change me!
+            </p>
+            <button id="changeTextButton">change text</button>
+            <button type="reset" onclick="reset()">reset</button>
+        </section>
+        <hr>
+        <!-- Example 2: Transversing the dom -->
+        <section id="example-2">
+            <h2>Transversing the dom</h2>
+            <ul id="citiesList">
+                <li class="chai">new york</li>
+                <li>tokyo</li>
+                <li>paris</li>
+                <li>london</li>
+            </ul>
+            <button id="highlightfirstcity">highlight first</button>
+        </section>
 
-<!-- Example 2: Transversing the dom -->
-<section id="example-2">
-    <h2>Transversing the dom</h2>
-    <ul id="citiesList">
-        <li class="chai">new york</li>
-        <li>tokyo</li>
-        <li>paris</li>
-        <li>london</li>
-    </ul>
-    <button id="highlightfirstcity">highlight first</button>
- </section>
- 
-<script src="script.js"></script>
+        <!-- Example 3: Mainpulating dom elements -->
+        <section id="example-3">
+            <h2>Mainpulating Dom elements</h2>
+            <div id="coffeeOrder">Order: <span
+                    id="coffeeType">Latte</span></div>
+            <button id="changeOrder">Change order to expresso</button>
+        </section>
 
-</body>
+        <!-- Example 4: Creating and inserting elements -->
+        <section id="example-4">
+            <h2>Creating and Inserting Elements</h2>
+            <button id="addNewItem">Add a new item to the shopping
+                lists</button>
+            <ul id="shoppingList">
+                <li>Bread</li>
+                <li>Milk</li>
+            </ul>
+        </section>
+
+        <!-- Example 5: Removing dom elements -->
+
+        <section id="example-5">
+            <h2>Removing DOM Elements</h2>
+
+            <ul id="taskList">
+                <li>Task-1</li>
+                <li>Task-2</li>
+                <li>Task-3</li>
+            </ul>
+
+            <button id="removeLastItem">Remove Last Task</button>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
 </html>
