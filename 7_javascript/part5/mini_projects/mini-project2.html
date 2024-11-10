@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>To-Do List</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       display: flex;
       justify-content: center;
-
       margin-top: 15%;
     }
+
     .todo-Lists {
       width: 400px;
-      height: 300px;
+      max-height: 400px;
+      overflow-y: auto;
       background-color: aliceblue;
       border: 5px solid black;
       padding: 5px;
     }
+
     #box-1 {
       width: 100%;
       height: 50px;
@@ -35,44 +34,99 @@
       padding: 0 10px;
       box-sizing: border-box;
     }
+
     #box-1 h1 {
       color: white;
       margin: 0;
     }
-    .icons {
-      color: white;
-      font-size: 20px;
+
+    /* Container for icons */
+    .icons-container {
+      display: flex;
+      gap: 10px;
+      /* Adds space between icons */
     }
-    /* Add task section */
-    li{
-      width: 95%;
+
+    /* Individual icon styling */
+    #icons,
+    #icons-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
       height: 30px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #icons {
+      background-color: rgb(39, 138, 224);
+    }
+
+    #icons-2 {
+      background-color: red;
+    }
+
+    #icons-2 i {
+      color: white;
+    }
+
+    /* Task items */
+    li {
+      width: 95%;
       background-color: rgb(39, 138, 224);
       padding: 10px;
       margin-top: 20px;
       color: white;
       text-align: center;
-      
-    }
-    #icons , i{
-        background-color: rgb(39, 138, 224);
-        padding: 5px;
+      list-style: none;
+      border-radius: 5px;
     }
   </style>
 </head>
+
 <body>
   <div class="todo-Lists">
     <div id="box-1">
       <h1>Add tasks</h1>
-      <div id="icons">
-        <i class="fa-solid fa-plus"></i>
+      <!-- Container for icons -->
+      <div class="icons-container">
+        <div id="icons">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div id="icons-2">
+          <i class="fa-solid fa-minus"></i>
+        </div>
       </div>
     </div>
     <div id="tasks-add">
-      <li class="addBox-1">Task Placeholder</li> <!-- Placeholder for task entries -->
-      <li class="addBox-2">Task Placeholder</li> <!-- Placeholder for task entries -->
+      <li>Task Placeholder</li>
+      <li>Task Placeholder</li>
+      <li>Task Placeholder</li>
     </div>
   </div>
-   <script src="mp2.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("icons").addEventListener("click", function () {
+
+        // add the element
+        // Create a new 'li' element
+        let newTask = document.createElement("li");
+        newTask.textContent = "omkar"; // Set the content for the new task
+
+        // Append the new 'li' element to the 'tasks-add' container
+        document.getElementById("tasks-add").appendChild(newTask);
+      });
+
+      // remove the element
+      document.getElementById(`icons-2`).addEventListener(`click`, function () {
+        let remove = document.getElementById(`tasks-add`)
+        remove.lastElementChild.remove();
+      })
+    });
+
+  </script>
 </body>
+
 </html>
