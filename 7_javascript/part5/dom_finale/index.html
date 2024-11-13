@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .highlight{
+      background-color: pink;
+     
+    }
+  </style>
   <body>
     <!-- Example 6: -->
     <section id="example-6">
@@ -13,25 +19,39 @@
     </section>
 
     <!-- Example 7: Event Delegation -->
-     <section id="example-7">
-        <h2>Event Delegration</h2>
-        <ul id="teaList">
-            <li class="teaItem">Green tea</li>
-            <li class="teaItem">Black tea</li>
-            <li class="teaItem">Oolong Tea</li>
-        </ul>
-     </section>
-     
-     <!-- Example 8: Form Handling -->
-     <section id="example-8">
+    <section id="example-7">
+      <h2>Event Delegration</h2>
+      <ul id="teaList">
+        <li class="teaItem">Green tea</li>
+        <li class="teaItem">Black tea</li>
+        <li class="teaItem">Oolong Tea</li>
+      </ul>
+    </section>
+
+    <!-- Example 8: Form Handling -->
+    <section id="example-8">
       <h2>Form Handling</h2>
-      <form id="feedbackForm" >
+      <form id="feedbackForm">
         <label for="feedbackInput">Your Feedback:</label>
         <input type="text" id="feedbackInput"><br><br>
         <button type="submit">Submit Feedback</button>
       </form>
       <p id="feedbackDisplay"></p>
-   </section>
-    <script src="dom.js"></script>
-  </body>
-</html>
+    </section>
+
+    <!-- Exmaple 9: Dom Content loaded -->
+    <section id="example-9">
+      <h2>Dom Content loaded</h2>
+      <form id="feedbackForm">
+        <p id="domStatus">Waiting for Dom to load.....</p>
+      </section>
+
+      <!-- Example 10: Css Classes Manipulation -->
+      <section id="example-10">
+        <h2>Css Classes Manipulation</h2>
+        <p id="descriptionText">This will change color</p>
+        <button id="toggleHighlight">Toggle Highlight</button>
+      </section>
+      <script src="dom.js"></script>
+    </body>
+  </html>

@@ -21,5 +21,15 @@ document.getElementById(`feedbackForm`).addEventListener(`submit` , function(eve
    document.getElementById(`feedbackDisplay`).textContent= `Feedback is: ${feedback}`
 
 //    hw: how to grab the value of feedbackinput
-   
+})
+
+// Example 9:
+document.addEventListener(`DOMContentLoaded`,function(){
+    document.getElementById(`domStatus`).textContent="Dom fully loaded";
+})
+
+// Example 10:
+document.getElementById(`toggleHighlight`).addEventListener(`click`,function(){
+    let description = document.getElementById(`descriptionText`);
+    description.classList.toggle(`highlight`)
 })
