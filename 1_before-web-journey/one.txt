@@ -1,4 +1,4 @@
-i am new in web development
+i am new in web development i can do it
 
 ctrl+p = one screen to second screen
 ctrl+shift+p, = settings
