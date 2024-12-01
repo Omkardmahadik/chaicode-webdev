@@ -1,0 +1,78 @@
+/* 1: universal selector */
+
+/* to remove space of by default browser gives */
+/* astrick */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 2: type selector */
+p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 3: class selectors -> not unique */
+.highlight{
+    background-color: blue;
+}
+
+/* 4: id selector -> unique */
+#header{
+  background-color: #333;
+  color: white
+}
+
+/* 5: attribute selector */
+input[type="text"]{
+    border: 1px solid blue;
+}
+
+/* 6: descendant selector */
+article p {
+  font-style: italic;
+  background-color: aquamarine;
+  color: white;
+  padding: 3px;
+}
+
+/* 7: child selector  */
+ul>li{
+  list-style-type: square;
+  background-color: orangered;
+}
+
+body>p{
+  color: chartreuse;
+}
+
+/* 8: adjacent sibiling selector */
+article  + p{
+  font-weight: bold;
+}
+
+/* 9: general sibiling selector */
+article ~ p{
+  color: rgb(247, 3, 3);
+}
+
+/* 10: pseudo class selector */
+input:hover{
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  color: #1a1a;
+  padding: 5px;
+}
+
+/* 11: pseudo element selector */
+h1::first-letter{
+  color: red;
+}
+
+/* 12: grouping selector */
+h1,h2,h3{
+  color: chocolate;
+}

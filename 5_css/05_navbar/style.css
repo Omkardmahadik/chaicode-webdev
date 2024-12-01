@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.nav-container {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Navbar-1 */
+.nav-1 {
+    background-color: #faf9fa;
+    padding: 10px;
+}
+
+.nav-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-1 li {
+    display: inline;
+}
+
+.nav-1 a {
+    text-decoration: none;
+    color: #202020;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav-1 a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #0a65c7;
+    transform: scaleX(0);
+    transform-origin: left; /* Anchor the animation to the left */
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-1 a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-1 .login-btn {
+    background-color: #254bf6;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-1 .login-btn:hover {
+    background-color: #1e3eb8;
+}
+
+button {
+    border: none;
+}
+
+/* Navbar-2 */
+.nav-2 {
+    background-color: #03643c;
+    width: 200px;
+    padding: 20px;
+}
+
+.nav-2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-2 li {
+    margin-bottom: 12px;
+}
+
+.nav-2 a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-2 a:hover {
+    background-color: #137e0a;
+}
+
+.nav-2 .login-btn {
+    background-color: #048a2f;
+    color: #ffff;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.nav-2 .login-btn:hover {
+    background-color: green;
+    border: 0.5px solid white;
+}
