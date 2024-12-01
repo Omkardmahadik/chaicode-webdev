@@ -120,3 +120,39 @@ button {
     background-color: green;
     border: 0.5px solid white;
 }
+
+/* nav-3 */
+
+.nav-3{
+  background-color: #54cff1;
+  padding: 10px;
+
+}
+.nav-3 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-3 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+.nav-3 .dropdown-content{
+    display: none;
+}
+
+.nav-3 .dropdown:hover .dropdown-content{
+  display: block;
+  position: absolute;
+  background-color: #202020;
+  /* margin-top: 11px; */
+  padding: 5px;
+}
+.nav-3 .dropdown a:hover {
+    background-color: #54cff1 ;
+}
